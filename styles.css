@@ -31,3 +31,7 @@ button {
   margin-bottom: auto;
   font-size: 1.1rem;
 }
+
+.hide {
+  display: none;
+}
