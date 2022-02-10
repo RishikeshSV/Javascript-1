@@ -1,0 +1,33 @@
+body {
+  margin: 0px;
+}
+.input-tables {
+  display: flex;
+}
+.matrix {
+  border-collapse: collapse;
+  margin: auto;
+}
+td {
+  border: 3px solid black;
+  padding: 10px;
+  height: 70px;
+  width: 70px;
+}
+input {
+  border: none;
+  outline: none;
+  width: 70px;
+  font-size: 2rem;
+  text-align: center;
+}
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+button {
+  padding: 5px;
+  letter-spacing: 2px;
+  margin: 20px;
+  margin-bottom: auto;
+  font-size: 1.1rem;
+}
