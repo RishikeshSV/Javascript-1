@@ -9,11 +9,10 @@ const m = 3;
 const n = 3;
 const p = 2;
 
-var A = [];
-var B = [];
-
 showResult = () => {
   solution.classList.remove("hide");
+  var A = [];
+  var B = [];
 
   //MATRIX A
   for (i = 0; i < m; ++i) {
