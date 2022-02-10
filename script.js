@@ -2,6 +2,7 @@ const solution = document.querySelector(".solution-table");
 
 const matrix1 = document.querySelector("#matrix-1");
 const matrix2 = document.querySelector("#matrix-2");
+const matrix3 = document.querySelector("#matrix-3");
 
 // m*n and n*p tables
 const m = 3;
@@ -10,11 +11,6 @@ const p = 2;
 
 var A = [];
 var B = [];
-var C = [
-  [0, 0],
-  [0, 0],
-  [0, 0],
-];
 
 showResult = () => {
   solution.classList.remove("hide");
@@ -40,7 +36,14 @@ showResult = () => {
   //SOLUTION
 
   var result = multiplyMatrices(A, B);
-  console.table(result);
+
+  //POPULATING SOLUTION TABLE
+
+  for (i = 0; i < n; ++i) {
+    for (j = 0; j < p; ++j) {
+      matrix3.rows[i].cells[j].innerHTML = result[i][j];
+    }
+  }
 };
 
 function multiplyMatrices(m1, m2) {

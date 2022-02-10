@@ -35,3 +35,9 @@ button {
 .hide {
   display: none;
 }
+
+#matrix-3 td {
+  width: 70px;
+  font-size: 2rem;
+  text-align: center;
+}
